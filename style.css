@@ -1,0 +1,30 @@
+:root {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+#login span, #login label {
+    font-size: 1rem;
+}
+
+.login_body {
+    width: 30%;
+    background-color: #ffffff;
+}
+
+.login_body .input {
+    max-width: 100%;
+}
+
+.login_btn {
+    flex: 1;
+    padding: 0.7rem;
+    margin: 1rem 0;
+}
+
+.login_header h4 {
+    font-size: 2rem;
+}
