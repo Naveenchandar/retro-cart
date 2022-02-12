@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Naveen Chandar" />
+    <meta name="description" content="Rectro cart an ecommerce." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://retro-ui-design.netlify.app/css/retro.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="product-list.css" />
+    <title>Retro-Cart</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="nav_group">
+            <nav class="nav_bar flex_row justify_spacebtw">
+                <div class="nav_options">
+                    <a class="navbar_brand nav_link align_center" href="#">
+                        Retro Cart
+                    </a>
+                </div>
+                <div class="nav_search flex align_center justify_center">
+                    <input type="search" placeholder="Search" class="input" />
+                </div>
+                <div class="nav_actions flex_row">
+                    <span class="badge_container">
+                        <i class="fa fa-heart-o"></i>
+                        <span class="badge badge_number">
+                            <span>0</span>
+                        </span>
+                    </span>
+                    <span class="badge_container">
+                        <i class='fa fa-shopping-cart'></i>
+                        <span class="badge badge_number">
+                            <span>0</span>
+                        </span>
+                    </span>
+                    <button class="btn">Login</button>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="product_main" class="flex h_100 w_screen_100 product_main">
+        <section class="filter_products">
+            <div class="p-2 flex align_center justify_spacebtw">
+                <h5 class="font_bold">Filter</h5>
+                <span>Clear</span>
+            </div>
+            <div class="p-2">
+                <h5 class="font_bold">Price</h5>
+                <input type="range" min="1" max="100" value="50">
+            </div>
+            <div class="p-2">
+                <h5 class="font_bold">Category</h5>
+                <ul>
+                    <li class="p-1">
+                        <input type="checkbox">&nbsp;
+                        <span>Men Clothing</span>
+                    </li>
+                    <li class="p-1">
+                        <input type="checkbox">&nbsp;
+                        <span>Men Clothing</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-2">
+                <h5 class="font_bold">Rating</h5>
+                <ul>
+                    <li class="p-1">
+                        <input type="radio">
+                        <span>4 stars & above</span>
+                    </li>
+                    <li class="p-1">
+                        <input type="radio">
+                        <span>3 stars & above</span>
+                    </li>
+                    <li class="p-1">
+                        <input type="radio">
+                        <span>2 stars & above</span>
+                    </li>
+                    <li class="p-1">
+                        <input type="radio">
+                        <span>1 stars & above</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-2">
+                <h5 class="font_bold">Sort by</h5>
+                <ul>
+                    <li class="p-1">
+                        <input type="radio">
+                        <span>Price - Low to high</span>
+                    </li>
+                    <li class="p-1">
+                        <input type="radio">
+                        <span>Price - High to Low</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="products_list">
+            <h5 class="font_bold my-1 px-4">Showing All Products (showing 20 Products)</h5>
+            <section class="p-4 flex_row justify_start product_item_group">
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="ecommerce_card flex_column product_item">
+                    <div class="product_image w-100 my-1">
+                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    </div>
+                    <div class="product_details flex flex_dcolumn w-100">
+                        <h5 class="flex justify_spacebtw">
+                            <span class="product_review">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o star_empty"></i>
+                                <span>3.5</span>
+                            </span>
+                            <span class="product_offer font_bold">25% off</span>
+                        </h5>
+                        <div class="product_info">
+                            <h4 class="product_title">Product title.</h4>
+                        </div>
+                        <div class="product_price">
+                            <span class="product_discount_price primary_text_color font_bold">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <button class="product_add_cart btn btn_primary p-2">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
