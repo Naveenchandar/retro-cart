@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Naveen Chandar" />
+    <meta name="description" content="Rectro cart an ecommerce." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://retro-ui-design.netlify.app/css/retro.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="cart-management.css" />
+    <title>Retro-Cart</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="nav_group">
+            <nav class="nav_bar flex_row justify_spacebtw">
+                <div class="nav_options">
+                    <a class="navbar_brand nav_link align_center" href="#">
+                        Retro Cart
+                    </a>
+                </div>
+                <div class="nav_search flex align_center justify_center">
+                    <input type="search" placeholder="Search" class="input" />
+                </div>
+                <div class="nav_actions flex_row">
+                    <span class="badge_container">
+                        <i class="fa fa-heart-o"></i>
+                        <span class="badge badge_number">
+                            <span>0</span>
+                        </span>
+                    </span>
+                    <span class="badge_container">
+                        <i class='fa fa-shopping-cart'></i>
+                        <span class="badge badge_number">
+                            <span>0</span>
+                        </span>
+                    </span>
+                    <button class="btn">Login</button>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <h3 class="text_center my-1 py-1">My cart (3) </h3>
+    <section id="cart_main" class="grid cart_main">
+        <section id="cart_management" class="cart_management">
+            <section class="cart_list my-2">
+                <div class="cart_item border flex_row cart_gap justify_spacebtw">
+                    <div class="cart_image">
+                        <img src="./cart_management.png" alt="Clothes" class="block w-100 m_auto" />
+                    </div>
+                    <div class="flex_column align_start cart_item_info cart_gap">
+                        <h5>Men Premium Jacket</h5>
+                        <div class="product_price">
+                            <span class="product_discount_price">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <p class="cart_offer font_bold">50% Off</p>
+                        <div class="flex align_center cart_quantity cart_gap">
+                            <span>Quantity :</span>
+                            <div class="flex align_center cart_count cart_gap">
+                                <i class='fa fa-minus-circle'></i>
+                                <span>1</span>
+                                <i class='fa fa-plus-circle'></i>
+                            </div>
+                        </div>
+                        <div class="cart_btns flex flex_dcolumn w-100">
+                            <button class="btn btn_outlined w-100">Remove from cart</button>
+                            <button class="btn btn_primary w-100">Move to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart_list  my-2">
+                <div class="cart_item border flex_row cart_gap justify_spacebtw">
+                    <div class="cart_image">
+                        <img src="./cart_management.png" alt="Clothes" class="block w-100 m_auto" />
+                    </div>
+                    <div class="flex_column align_start cart_item_info cart_gap">
+                        <h5>Men Premium Jacket</h5>
+                        <div class="product_price">
+                            <span class="product_discount_price">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <p class="cart_offer font_bold">50% Off</p>
+                        <div class="flex align_center cart_quantity cart_gap">
+                            <span>Quantity :</span>
+                            <div class="flex align_center cart_count cart_gap">
+                                <i class='fa fa-minus-circle'></i>
+                                <span>1</span>
+                                <i class='fa fa-plus-circle'></i>
+                            </div>
+                        </div>
+                        <div class="cart_btns flex flex_dcolumn w-100">
+                            <button class="btn btn_outlined w-100">Remove from cart</button>
+                            <button class="btn btn_primary w-100">Move to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart_list  my-2">
+                <div class="cart_item border flex_row cart_gap">
+                    <div class="cart_image">
+                        <img src="./cart_management.png" alt="Clothes" class="block w-100 m_auto" />
+                    </div>
+                    <div class="flex_column align_start cart_item_info cart_gap justify_spacebtw">
+                        <h5>Men Premium Jacket</h5>
+                        <div class="product_price">
+                            <span class="product_discount_price">Rs. 800</span>
+                            <span class="product_original_price">Rs. 1600</span>
+                        </div>
+                        <p class="cart_offer font_bold">50% Off</p>
+                        <div class="flex align_center cart_quantity cart_gap">
+                            <span>Quantity :</span>
+                            <div class="flex align_center cart_count cart_gap">
+                                <i class='fa fa-minus-circle'></i>
+                                <span>1</span>
+                                <i class='fa fa-plus-circle'></i>
+                            </div>
+                        </div>
+                        <div class="cart_btns flex flex_dcolumn w-100">
+                            <button class="btn btn_outlined w-100">Remove from cart</button>
+                            <button class="btn btn_primary w-100">Move to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="cart_price_details" class="cart_price_details flex_column align_start justify_start border cart_gap m-2 p-3">
+            <h5 class="font_bold my-1">Price Details</h5>
+            <div class="price_splitup flex flex_dcolumn w-100 cart_gap">
+                <ul class="flex flex_dcolumn cart_gap">
+                    <li class="flex justify_spacebtw">
+                        <span>Price (2 items)</span>
+                        <span><i class='fa fa-rupee'></i>4999</span>
+                    </li>
+                    <li class="flex justify_spacebtw">
+                        <span>Discount</span>
+                        <span>-<i class='fa fa-rupee'></i>4999</span>
+                    </li>
+                    <li class="flex justify_spacebtw">
+                        <span>Deliver charges</span>
+                        <span><i class='fa fa-rupee'></i>4999</span>
+                    </li>
+                </ul>
+                <h5 class="font_bold flex justify_spacebtw">
+                    Total Amount <span><i class='fa fa-rupee'></i> 3000 </span>
+                </h5>
+                <p>You will save <i class='fa fa-rupee'></i> 3000 from this order</p>
+                <button class="btn btn_primary font_bold text_uppercase w-100">Place Order</button>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
