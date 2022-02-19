@@ -1,4 +1,4 @@
-@import url(./variables.css);
+@import url(../../css/variables.css);
 
 .product_wishlist {
     font-size: 1.5rem;
@@ -22,6 +22,7 @@
 .wishlist_card .product_wishlist {
     top: 0;
     right: 0;
+    color: var(--red);
 }
 
 .move_cart_btn {

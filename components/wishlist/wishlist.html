@@ -10,7 +10,7 @@
     <meta name="description" content="Rectro cart an ecommerce." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://retro-ui-design.netlify.app/css/retro.css" />
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
     <link rel="stylesheet" href="wishlist.css" />
     <title>Retro-Cart | Wishlist</title>
 </head>
@@ -21,7 +21,7 @@
             <div class="nav_group">
                 <nav class="nav_bar flex_row justify_spacebtw">
                     <div class="nav_options">
-                        <a class="navbar_brand nav_link align_center" href="#">
+                        <a class="navbar_brand nav_link align_center" href="../../index.html">
                             Retro Cart
                         </a>
                     </div>
@@ -29,19 +29,19 @@
                         <input type="search" placeholder="Search" class="input" />
                     </div>
                     <div class="nav_actions flex_row">
-                        <span class="badge_container">
+                        <a href="./wishlist.html" class="badge_container">
                             <i class="fa fa-heart-o"></i>
                             <span class="badge badge_number">
                                 <span>0</span>
                             </span>
-                        </span>
-                        <span class="badge_container">
+                        </a>
+                        <a href="../cart-management/cart-management.html" class="badge_container">
                             <i class='fa fa-shopping-cart'></i>
                             <span class="badge badge_number">
                                 <span>0</span>
                             </span>
-                        </span>
-                        <button class="btn">Login</button>
+                        </a>
+                        <button class="btn auth_btn"><a href="../authentication/login.html">Logout</a></button>
                     </div>
                 </nav>
             </div>
@@ -49,8 +49,8 @@
         <section class="wishlist_main p-4 flex_row justify_even">
             <div class="ecommerce_card wishlist_card flex_column">
                 <div class="product_image w-100">
-                    <img src="./image_1.png" class="w-100 block m_auto" alt="wishlist product" />
-                    <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    <img src="../../assets/image_1.png" class="w-100 block m_auto" alt="wishlist product" />
+                    <i class="fa fa-heart product_wishlist pointer"></i>
                 </div>
                 <div class="product_details flex flex_dcolumn w-100">
                     <div class="product_info">
@@ -64,14 +64,16 @@
                         </div>
                     </div>
                     <button class="product_add_cart py-2 m-2 move_cart_btn">
-                        Move to cart
+                        <a href="../cart-management/cart-management.html">
+                            Move to cart
+                        </a>
                     </button>
                 </div>
             </div>
             <div class="ecommerce_card wishlist_card flex_column">
                 <div class="product_image w-100">
-                    <img src="./image_1.png" class="w-100 block m_auto" alt="wishlist product" />
-                    <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    <img src="../../assets/image_1.png" class="w-100 block m_auto" alt="wishlist product" />
+                    <i class="fa fa-heart product_wishlist pointer"></i>
                 </div>
                 <div class="product_details flex flex_dcolumn w-100">
                     <div class="product_info">
@@ -85,14 +87,16 @@
                         </div>
                     </div>
                     <button class="product_add_cart py-2 m-2 move_cart_btn">
-                        Move to cart
+                        <a href="../cart-management/cart-management.html">
+                            Move to cart
+                        </a>
                     </button>
                 </div>
             </div>
             <div class="ecommerce_card wishlist_card flex_column">
                 <div class="product_image w-100">
-                    <img src="./image_1.png" class="w-100 block m_auto" alt="wishlist product" />
-                    <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    <img src="../../assets/image_1.png" class="w-100 block m_auto" alt="wishlist product" />
+                    <i class="fa fa-heart product_wishlist pointer"></i>
                 </div>
                 <div class="product_details flex flex_dcolumn w-100">
                     <div class="product_info">
@@ -106,14 +110,16 @@
                         </div>
                     </div>
                     <button class="product_add_cart py-2 m-2 move_cart_btn">
-                        Move to cart
+                        <a href="../cart-management/cart-management.html">
+                            Move to cart
+                        </a>
                     </button>
                 </div>
             </div>
             <div class="ecommerce_card wishlist_card flex_column">
                 <div class="product_image w-100">
-                    <img src="./image_1.png" class="w-100 block m_auto" alt="wishlist product" />
-                    <i class="fa fa-heart-o product_wishlist pointer"></i>
+                    <img src="../../assets/image_1.png" class="w-100 block m_auto" alt="wishlist product" />
+                    <i class="fa fa-heart product_wishlist pointer"></i>
                 </div>
                 <div class="product_details flex flex_dcolumn w-100">
                     <div class="product_info">
@@ -127,7 +133,9 @@
                         </div>
                     </div>
                     <button class="product_add_cart py-2 m-2 move_cart_btn">
-                        Move to cart
+                        <a href="../cart-management/cart-management.html">
+                            Move to cart
+                        </a>
                     </button>
                 </div>
             </div>

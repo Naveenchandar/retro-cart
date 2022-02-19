@@ -10,7 +10,7 @@
     <meta name="description" content="Rectro cart an ecommerce." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://retro-ui-design.netlify.app/css/retro.css" />
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
     <link rel="stylesheet" href="product-list.css" />
     <title>Retro-Cart</title>
 </head>
@@ -20,7 +20,7 @@
         <div class="nav_group">
             <nav class="nav_bar flex_row justify_spacebtw">
                 <div class="nav_options">
-                    <a class="navbar_brand nav_link align_center" href="#">
+                    <a class="navbar_brand nav_link align_center" href="../../index.html">
                         Retro Cart
                     </a>
                 </div>
@@ -28,19 +28,20 @@
                     <input type="search" placeholder="Search" class="input" />
                 </div>
                 <div class="nav_actions flex_row">
-                    <span class="badge_container">
+                    <a href="../wishlist/wishlist.html" class="badge_container">
                         <i class="fa fa-heart-o"></i>
                         <span class="badge badge_number">
                             <span>0</span>
                         </span>
-                    </span>
-                    <span class="badge_container">
+                    </a>
+                    <a href="../cart-management/cart-management.html" class="badge_container">
                         <i class='fa fa-shopping-cart'></i>
                         <span class="badge badge_number">
                             <span>0</span>
                         </span>
-                    </span>
-                    <button class="btn">Login</button>
+                    </a>
+                    <button class="btn auth_btn"><a href="../authentication/login.html">Logout</a></button>
+                    <button class="btn auth_btn"><a href="../authentication/signup.html">Sign up</a></button>
                 </div>
             </nav>
         </div>
@@ -108,7 +109,7 @@
             <section class="p-4 flex_row justify_start product_item_group">
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -131,13 +132,15 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -160,13 +163,15 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -189,13 +194,15 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -218,13 +225,15 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -247,13 +256,15 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -276,13 +287,15 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -305,13 +318,15 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
                 <div class="ecommerce_card flex_column product_item">
                     <div class="product_image w-100 my-1">
-                        <img src="./image_1.png" class="w-100 block m_auto" />
+                        <img src="../../assets/image_1.png" class="w-100 block m_auto" />
                         <i class="fa fa-heart-o product_wishlist pointer"></i>
                     </div>
                     <div class="product_details flex flex_dcolumn w-100">
@@ -334,7 +349,9 @@
                             <span class="product_original_price">Rs. 1600</span>
                         </div>
                         <button class="product_add_cart btn btn_primary p-2">
-                            Add to cart
+                            <a href="../cart-management/cart-management.html">
+                                Add to cart
+                            </a>
                         </button>
                     </div>
                 </div>
