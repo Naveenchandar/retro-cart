@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://retro-ui-design.netlify.app/css/retro.css" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./components/navbar/navbar.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Retro-Cart | Home</title>
 </head>
 
@@ -20,7 +20,7 @@
         <div class="nav_group">
             <nav class="nav_bar flex_row justify_spacebtw">
                 <div class="nav_options">
-                    <a class="navbar_brand nav_link align_center" href="#">
+                    <a class="navbar_brand nav_link align_center" href="../../index.html">
                         Retro Cart
                     </a>
                 </div>
@@ -28,20 +28,20 @@
                     <input type="search" placeholder="Search" class="input" />
                 </div>
                 <div class="nav_actions flex_row">
-                    <span class="badge_container">
+                    <a href="./components/wishlist/wishlist.html" class="badge_container">
                         <i class="fa fa-heart-o"></i>
                         <span class="badge badge_number">
                             <span>0</span>
                         </span>
-                    </span>
-                    <span class="badge_container">
+                    </a>
+                    <a href="./components/cart-management/cart-management.html" class="badge_container">
                         <i class='fa fa-shopping-cart'></i>
                         <span class="badge badge_number">
                             <span>0</span>
                         </span>
-                    </span>
-                    <button class="btn login_btn">Login</button>
-                    <button class="btn login_btn">Sign up</button>
+                    </a>
+                    <button class="btn auth_btn"><a href="./components/authentication/login.html">Login</a></button>
+                    <button class="btn auth_btn"><a href="./components/authentication/signup.html">Sign up</a></button>
                 </div>
             </nav>
         </div>
@@ -50,9 +50,7 @@
         <section class="header_group">
             <div class="w3-display-container w-100 relative_pos">
                 <img class="header_image_slides w-100 block"
-                    src="https://images.unsplash.com/photo-1603798125914-7b5d27789248?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                    alt="Men's clothing"
-                    >
+                    src="https://images.unsplash.com/photo-1603798125914-7b5d27789248?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
 
                 <div class="absolute_pos header_content">
                     <div class="row">
@@ -66,7 +64,7 @@
                                     On Everything
                                 </h1>
                                 <div class="btn_box">
-                                    <a href=""
+                                    <a href="./components/product-list/product-list.html"
                                         class="btn1 cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
                                         Shop Now
                                     </a>
@@ -88,7 +86,7 @@
                     <div>
                         <div class="why_item text_center rounded_sm">
                             <div class="img_box">
-
+                                <img src="./assets/delivery.svg" alt="delivery faster" class="shop_icons m_auto" />
                             </div>
                             <div class="detail_box">
                                 <h5 class="my-1">
@@ -103,7 +101,7 @@
                     <div>
                         <div class="why_item text_center rounded_sm">
                             <div class="img_box">
-
+                                <img src="./assets/free.svg" alt="free shipping" class="shop_icons m_auto" />
                             </div>
                             <div class="detail_box">
                                 <h5 class="my-1">
@@ -118,7 +116,7 @@
                     <div>
                         <div class="why_item text_center rounded_sm">
                             <div class="img_box">
-
+                                <img src="./assets/quality.svg" alt="Best quality" class="shop_icons m_auto" />
                             </div>
                             <div class="detail_box">
                                 <h5 class="my-1">
@@ -136,7 +134,7 @@
         <section class="new_arrivals_section flex justify_even">
             <div class="flex align_start new_arrivals_box">
                 <div class="w-100">
-                    <img src="image_1.png" alt="" class="transition_3_ease" alt="New arrivals">
+                    <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                 </div>
                 <div class="w-100 flex flex_dcolumn new_arrivals_content">
                     <h3 class="font_bold">New Arrivals</h3>
@@ -150,7 +148,7 @@
             </div>
             <div class="flex align_start new_arrivals_box">
                 <div class="w-100">
-                    <img src="image_1.png" alt="" class="transition_3_ease" alt="New arrivals">
+                    <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                 </div>
                 <div class="w-100 flex flex_dcolumn new_arrivals_content">
                     <h3 class="font_bold">New Arrivals</h3>
@@ -175,13 +173,14 @@
                         <div class="product_box relative_pos transition_3_ease">
                             <div class="option_container absolute_pos top_0 left_0 w-100 h-100 flex_row">
                                 <div class="options flex_column">
-                                    <a href="" class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
+                                    <a href="./components/product-list/product-list.html"
+                                        class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
                                         View Products
                                     </a>
                                 </div>
                             </div>
                             <div class="img_box flex_column">
-                                <img src="image_1.png" alt="" class="transition_3_ease" alt="Men's shirt">
+                                <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                             </div>
                             <div class="detail_box text_center">
                                 <h5 class="font_bold">
@@ -194,13 +193,14 @@
                         <div class="product_box relative_pos transition_3_ease">
                             <div class="option_container absolute_pos top_0 left_0 w-100 h-100 flex_row">
                                 <div class="options flex_column">
-                                    <a href="" class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
+                                    <a href="./components/product-list/product-list.html"
+                                        class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
                                         View Products
                                     </a>
                                 </div>
                             </div>
                             <div class="img_box flex_column">
-                                <img src="image_1.png" alt="" class="transition_3_ease" alt="Men's tshirt">
+                                <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                             </div>
                             <div class="detail_box text_center">
                                 <h5 class="font_bold">
@@ -213,13 +213,14 @@
                         <div class="product_box relative_pos transition_3_ease">
                             <div class="option_container absolute_pos top_0 left_0 w-100 h-100 flex_row">
                                 <div class="options flex_column">
-                                    <a href="" class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
+                                    <a href="./components/product-list/product-list.html"
+                                        class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
                                         View Products
                                     </a>
                                 </div>
                             </div>
                             <div class="img_box flex_column">
-                                <img src="image_1.png" alt="" class="transition_3_ease" alt="Women's shirt">
+                                <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                             </div>
                             <div class="detail_box text_center">
                                 <h5 class="font_bold">
@@ -232,13 +233,14 @@
                         <div class="product_box relative_pos transition_3_ease">
                             <div class="option_container absolute_pos top_0 left_0 w-100 h-100 flex_row">
                                 <div class="options flex_column">
-                                    <a href="" class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
+                                    <a href="./components/product-list/product-list.html"
+                                        class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
                                         View Products
                                     </a>
                                 </div>
                             </div>
                             <div class="img_box flex_column">
-                                <img src="image_1.png" alt="" class="transition_3_ease" alt="Women's tshirt">
+                                <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                             </div>
                             <div class="detail_box text_center">
                                 <h5 class="font_bold">
@@ -251,13 +253,14 @@
                         <div class="product_box relative_pos transition_3_ease">
                             <div class="option_container absolute_pos top_0 left_0 w-100 h-100 flex_row">
                                 <div class="options flex_column">
-                                    <a href="" class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
+                                    <a href="./components/product-list/product-list.html"
+                                        class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
                                         View Products
                                     </a>
                                 </div>
                             </div>
                             <div class="img_box flex_column">
-                                <img src="image_1.png" alt="" class="transition_3_ease" alt="Kids's clothing">
+                                <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                             </div>
                             <div class="detail_box text_center">
                                 <h5 class="font_bold">
@@ -270,13 +273,14 @@
                         <div class="product_box relative_pos transition_3_ease">
                             <div class="option_container absolute_pos top_0 left_0 w-100 h-100 flex_row">
                                 <div class="options flex_column">
-                                    <a href="" class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
+                                    <a href="./components/product-list/product-list.html"
+                                        class="cta_product py-1 px-2 transition_3_ease rounded_sm text_center">
                                         View Products
                                     </a>
                                 </div>
                             </div>
                             <div class="img_box flex_column">
-                                <img src="image_1.png" alt="" class="transition_3_ease" alt="Accessories">
+                                <img src="./assets/image_1.png" alt="" class="transition_3_ease">
                             </div>
                             <div class="detail_box text_center">
                                 <h5 class="font_bold">
@@ -289,11 +293,28 @@
             </div>
         </section>
         <footer class="p-2">
-            <div class="copy_rights text_center">
+            <div class="copy_rights text_center flex_column">
                 <p>Designed and Developed By Naveen Chandar 💛 🚀 </a></p>
+                <ul class="flex_row align_center font_bold">
+                    <li class="ml-2">
+                        <a href="https://github.com/Naveenchandar" target="_blank">
+                            <i class="fa fa-github social_icons"></i>
+                        </a>
+                    </li>
+                    <li class="ml-2">
+                        <a href="https://www.linkedin.com/in/naveen-ram/" target="_blank">
+                            <i class="fa fa-linkedin-square social_icons"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>© <span id="copy_right_year"> 2022 </span> Memory Nomads</p>
             </div>
         </footer>
     </section>
 </body>
+<script>
+    const year = document.getElementById("copy_right_year");
+    year.innerText = new Date().getFullYear();
+</script>
 
 </html>

@@ -1,4 +1,4 @@
-@import url(./variables.css);
+@import url(../../css/variables.css);
 
 :root {
     font-size: 1rem;
@@ -25,6 +25,10 @@ body {
     flex: 1;
     padding: 0.7rem;
     margin: 1rem 0;
+}
+
+.login_btn a {
+    font-size: 1.2rem;
 }
 
 .login_header h4 {
