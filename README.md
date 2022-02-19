@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./assets/retro_cart_favicon-32x32.png" alt="Retro Cart"></a>
+ <img width=200px height=200px src="./assets/retro_cart_logo.png" alt="Retro Cart"></a>
 </p>
 
 <h3 align="center">Retro Cart</h3>
