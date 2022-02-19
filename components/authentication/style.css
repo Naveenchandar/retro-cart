@@ -39,3 +39,14 @@ body {
     font-size: 1.4rem;
     padding: 1.4rem;
 }
+
+.input_password {
+    position: relative;
+    width: 100%;
+}
+
+.input_password i {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+}
