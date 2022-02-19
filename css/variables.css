@@ -8,3 +8,11 @@
     --product-hover-bg: #ffffff99;
     --black: #000;
 }
+
+
+/* hide search input for mobile devices */
+@media screen and (max-width:67.5em) {
+    .nav_search {
+        display: none;
+    }
+}

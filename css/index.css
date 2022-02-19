@@ -9,6 +9,7 @@
 .header_content {
     right: 10%;
     top: 15%;
+    transform: translate(0%, 100%);
 }
 
 .header_content .cta_product {
@@ -70,7 +71,7 @@
     background-color: var(--product-bg);
     overflow: hidden;
     box-shadow: 5px 5px 5px -5px var(--box-shadow);
-    border: solid var(--white) 10px;
+    border: 10px solid var(--product-hover-bg);
     width: 30rem;
 }
 
@@ -139,7 +140,7 @@
     margin-top: auto;
 }
 
-.season_collection p{
+.season_collection p {
     font-size: 1.6rem;
     line-height: 2rem;
 }
@@ -167,4 +168,122 @@ footer .copy_rights i {
 
 .copy_rights i:hover {
     color: var(--primary-color);
+}
+
+@media screen and (max-width:29em) {
+    .new_arrivals_section {
+        flex-wrap: wrap;
+    }
+
+    .product_section .container_group {
+        margin: 0;
+        width: 100%;
+    }
+
+    .product_section .container_group .section_row {
+        display: unset;
+    }
+
+    .new_arrivals_section .new_arrivals_box {
+        flex-direction: column;
+    }
+
+    .new_arrivals_content .season_collection {
+        text-align: center;
+    }
+
+    .new_arrivals_content .season_collection h4 {
+        font-size: 2rem;
+    }
+
+    .new_arrivals_box img {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .nav_search {
+        display: none;
+    }
+
+    .header_group img {
+        object-fit: contain;
+        height: auto;
+    }
+
+    .header_group .header_content {
+        top: 50%;
+        right: 3%;
+        transform: unset;
+    }
+
+    .header_group .header_content .header_h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin: 0.8rem 0;
+    }
+
+    .header_off {
+        font-size: 2rem;
+    }
+
+    .header_group .header_content .cta_product {
+        padding: 1rem;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .why_section .heading_container h2 {
+        font-size: 2.5rem;
+    }
+
+    .new_arrivals_content h3 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .why_section .why_item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .why_section .section_row {
+        justify-content: center
+    }
+}
+
+@media screen and (max-width:64rem) {
+    .why_item .section_row {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .why_section .why_item {
+        padding: 1rem;
+        width: 220px;
+    }
+
+    .shop_icons {
+        width: 4.5rem;
+    }
+
+    .why_item .detail_box h5 {
+        font-size: 1.6rem;
+    }
+
+    .why_item .detail_box p {
+        margin: 1rem;
+    }
+
+    .new_arrivals_box {
+        flex-direction: column;
+    }
+
+    .new_arrivals_content {
+        text-align: center;
+    }
+
+    .season_collection {
+        margin: unset;
+    }
 }

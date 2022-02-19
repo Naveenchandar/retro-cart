@@ -58,3 +58,13 @@ body {
 .product_item_group {
     gap: 5rem;
 }
+
+@media screen and (max-width: 48em) {
+    #product_main {
+        flex-direction: column;
+    }
+
+    .product_item_group {
+        justify-content: center;
+    }
+}
