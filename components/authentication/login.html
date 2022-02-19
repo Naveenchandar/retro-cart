@@ -10,11 +10,42 @@
     <meta name="description" content="Rectro cart an ecommerce." />
     <link rel="icon" type="image/x-icon" href="../../assets/retro_cart_favicon-32x32.png" />
     <link rel="stylesheet" href="https://retro-ui-design.netlify.app/css/retro.css" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Retro-Cart | Login</title>
 </head>
 
 <body>
+    <section id="navbar">
+        <div class="nav_group">
+            <nav class="nav_bar flex_row justify_spacebtw">
+                <div class="nav_options">
+                    <a class="navbar_brand nav_link align_center" href="../../index.html">
+                        Retro Cart
+                    </a>
+                </div>
+                <div class="nav_search flex align_center justify_center">
+                    <input type="search" placeholder="Search" class="input" />
+                </div>
+                <div class="nav_actions flex_row">
+                    <a href="../wishlist/wishlist.html" class="badge_container">
+                        <i class="fa fa-heart-o"></i>
+                        <span class="badge badge_number">
+                            <span>0</span>
+                        </span>
+                    </a>
+                    <a href="../cart-management/cart-management.html" class="badge_container">
+                        <i class='fa fa-shopping-cart'></i>
+                        <span class="badge badge_number">
+                            <span>0</span>
+                        </span>
+                    </a>
+                    <button class="btn auth_btn"><a href="./login.html">Login</a></button>
+                    <button class="btn auth_btn"><a href="./signup.html">Sign up</a></button>
+                </div>
+            </nav>
+        </div>
+    </section>
     <section id="login">
         <div class="flex flex_column h_screen_100">
             <div class="login_body border px-4 py-2">
