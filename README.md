@@ -38,8 +38,10 @@ Retro Cart - An e-commerce apllication for your clothes. An online store for all
 ## Demo
 Please visit this [link](https://retro-cart.netlify.app/).
 
+![Retro cart Gif](./assets/Retro_cart.gif)
+
 ## Screenshot
-![1](./assets/Retro-Cart-Home.png)
+![Retro cart home](./assets/Retro-Cart-Home.png)
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 To run locally, run below command in git terminal.
@@ -73,7 +75,16 @@ Once done with cloning, Open index.html in browser. You're good to go 🎉.
 
 ## ✍️ Contribution <a name = "contribution"></a>
 
-- Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/branch`).
+3. Perfom desired changes needed to the code base.
+4. Stage all your changes (`git add .`)
+3. Commit your changes with a proper commit message (`git commit -m 'Add some feature'`)
+4. Push the changes to your branch (`git push origin feature/branch`)
+5. Open new pull request
+6. Add appropriate title and description to your pull request explaining your changes and efforts done.
+
+NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 
 ## 🎉 Upcoming Features <a name = "upcomingfeatures"></a>
